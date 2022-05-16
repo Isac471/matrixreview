@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        body{
+            background-image: linear-gradient(to right, rgb(0, 44, 26), rgb(3, 160, 98), rgb(0, 44, 26));
+        }
+        #externa {
+          border: 1px solid;
+          padding: 82px;
+        }
+        input {
+          margin: 2px;
+          background-image: linear-gradient(to right, rgb(0, 150, 90), rgb(3, 160, 98), rgb(0, 150, 90));
+          border: black solid;
+        }
+        form{
+            text-align: center;
+        }
+        select{
+            background-image: linear-gradient(to right, rgb(0, 150, 90), rgb(3, 160, 98), rgb(0, 150, 90));
+            border: black solid;
+        }
+        textarea{
+            background-image: linear-gradient(to right, rgb(0, 150, 90), rgb(3, 160, 98), rgb(0, 150, 90));
+            border: black solid;
+        }
+        button{
+            background-image: linear-gradient(to right, rgb(0, 150, 90), rgb(3, 160, 98), rgb(0, 150, 90));
+            border: black solid;
+        }
+      </style>
+</head>
+<body>
+    <div id="externa">
+        <h1>Formulário de Contato</h1>
+        <form action="forms2.html" method="get" target="_self">
+            <h3>Dados Pessoais</h3>
+          <div>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Insira o Nome" required="">
+          </div>
+  
+          <div>
+            <label for="nome">Data Nascimento</label>
+            <input type="date" id="datanasc" name="datanasc">
+          </div>
+  
+          <div>
+              <label for="nacionalidade">Nacionalidade</label>
+              <select name="nacionalidade" id="nacionalidade">
+                  <option value="Brasileiro">Brasileiro</option>
+                  <option value="extrangeiro">Extrangeiro</option>
+              </select>
+          </div>
+  
+          <div>
+          <br>
+          <div>
+              <h3>Email e telefone de contato</h3>
+            <input type="email" id="" name="" value="Email:"><br>
+            <input type="telefone" id="" name="" value="Telefone:">
+          </div>
+          <div>
+              <label for="obs"><h3>Observações</h3></label><br>
+              <textarea name="obs" id="observacao" cols="30" rows="10">Preencha</textarea>    
+          </div>
+          <div>
+            <button type="submit" name="envio">Enviar</button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
